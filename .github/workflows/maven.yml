@@ -25,6 +25,11 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
     
+      - name: Run codacy-coverage
+        uses: ./
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+        
           
       - name : Step 5 - List the current directory
         run : ls -a

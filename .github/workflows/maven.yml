@@ -37,15 +37,4 @@ jobs:
         run: |
           cd target
           ls -a
-          
-  deploy:
-    runs-on: ubuntu-latest
-    if: ${{github.ref == 'refs/origin/main' }}
-    steps:
-    - uses: actions/checkout@v1
-    - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-      with:
-         heroku_api_key:  ${{secrets.HEROKU_API_KEY}}
-         heroku_app_name: "iteaching-production-sprint1"
-         heroku_email: "iteaching.sa@gmail.com"
 

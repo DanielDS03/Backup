@@ -37,4 +37,3 @@ jobs:
         run: |
           cd target
           ls -a
-

@@ -113,13 +113,8 @@
         </dependency>
         <dependency>
             <groupId>com.codacy</groupId>
-            <artifactId>coverage-parser_2.11</artifactId>
-            <version>2.4.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codacy</groupId>
-            <artifactId>codacy-coverage-reporter</artifactId>
-            <version>7.1.0</version>
+            <artifactId>codacy-api-java</artifactId>
+            <version>VERSION</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>

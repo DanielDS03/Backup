@@ -3,9 +3,7 @@
 
 name: Github Actions Java CI with Maven
 
-on: 
-  push:
-    branches: [ main ]
+on: [push]
   
 
 jobs:
@@ -30,9 +28,10 @@ jobs:
           pip install codacy-coverage
     
       - name: Codacy Coverage Reporter
-        uses: codacy/codacy-coverage-reporter-action@v1.1.0
+        uses: codacy/codacy-coverage-reporter-action@v1
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: cobertura.xml
           
       - name : Step 5 - List the current directory
         run : ls -a

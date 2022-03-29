@@ -30,7 +30,7 @@ jobs:
       - name: Codacy Coverage Reporter
         uses: codacy/codacy-coverage-reporter-action@v1.1.0
         with:
-          project-token: ${{ secrets.CODACY_API_TOKEN }}
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: cobertura.xml
           
       - name : Step 5 - List the current directory

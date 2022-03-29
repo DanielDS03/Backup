@@ -111,11 +111,7 @@
             <groupId>org.webjars</groupId>
             <artifactId>webjars-locator-core</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.codacy</groupId>
-            <artifactId>codacy-api-java</artifactId>
-            <version>VERSION</version>
-        </dependency>
+
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
